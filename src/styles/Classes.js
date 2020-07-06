@@ -1,0 +1,1 @@
+export const logoClasses = "img-fluid float-right pt-5";

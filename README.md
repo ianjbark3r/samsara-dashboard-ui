@@ -4,5 +4,6 @@ Front-end app built to provide a more workflow-friendly interface with the Samsa
 
 ## Built Using:
 - React
+- Bootstrap
 - Samsara
 - Firebase

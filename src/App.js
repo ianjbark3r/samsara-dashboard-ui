@@ -1,7 +1,6 @@
 import React from 'react';
 
 import Logo from './layout/Logo';
-import Filter from './layout/Filter';
 import Table from './layout/Table';
 
 function App() {
@@ -9,7 +8,6 @@ function App() {
     <div className="App">
       <div className="container-fluid">
         <Logo />
-        <Filter />
         <Table />
       </div>
     </div>

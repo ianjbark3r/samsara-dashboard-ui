@@ -20,18 +20,18 @@ const Dummy = () => {
           <td>John Q Public</td>
           <td>8675309</td>
           <td>SFD-Crete</td>
-          <td>2020-06-23 02:00</td>
-          <td>2020-06-23 03:00</td>
+          <td className="table-success">2020-06-23 02:00</td>
+          <td className="table-success">2020-06-23 03:00</td>
           <td></td>
         </tr>
         <tr>
-          <td>5000117013</td>
-          <td>John Q Public</td>
-          <td>8675309</td>
-          <td>SFD-GREENFIELD, IN DC</td>
-          <td>2020-06-24 02:30</td>
-          <td>2020-06-24 03:30</td>
-          <td></td>
+          <td className="table-primary">5000117013</td>
+          <td className="table-primary">John Q Public</td>
+          <td className="table-primary">8675309</td>
+          <td className="table-primary">SFD-GREENFIELD, IN DC</td>
+          <td className="table-success">2020-06-24 02:30</td>
+          <td className="table-success">2020-06-24 03:30</td>
+          <td className="table-primary"></td>
         </tr>
         <tr>
           <td>4301218067</td>
@@ -42,7 +42,7 @@ const Dummy = () => {
           <td>2020-06-25 02:30</td>
           <td></td>
         </tr>
-        <tr>
+        <tr className="table-primary">
           <td>4301218067</td>
           <td>John Q Public</td>
           <td>8675309</td>
@@ -60,7 +60,7 @@ const Dummy = () => {
           <td>2020-06-25 18:30</td>
           <td></td>
         </tr>
-        <tr>
+        <tr className="table-primary">
           <td>4301222998</td>
           <td>Sydney Bristow</td>
           <td>8675309</td>
@@ -78,7 +78,7 @@ const Dummy = () => {
           <td>2020-06-25 18:30</td>
           <td></td>
         </tr>
-        <tr>
+        <tr className="table-primary">
           <td>4301208656</td>
           <td></td>
           <td>8675309</td>
@@ -96,7 +96,7 @@ const Dummy = () => {
           <td>2020-06-25 18:30</td>
           <td></td>
         </tr>
-        <tr>
+        <tr className="table-primary">
           <td>6128889565</td>
           <td></td>
           <td>8675309</td>
@@ -114,7 +114,7 @@ const Dummy = () => {
           <td>2020-06-25 20:30</td>
           <td></td>
         </tr>
-        <tr>
+        <tr className="table-primary">
           <td>5152871949</td>
           <td></td>
           <td>8675309</td>

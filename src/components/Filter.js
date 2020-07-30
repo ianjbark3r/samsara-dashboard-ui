@@ -86,6 +86,7 @@ const Filter = (props) => {
           <label className={labelClasses} htmlFor="route">Route name:</label>
           <input 
             className="form-control" 
+            id="route"
             onChange={(e) => props.handleChange(e)}
             type="text" 
           />

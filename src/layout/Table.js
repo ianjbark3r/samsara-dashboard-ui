@@ -3,6 +3,8 @@ import React, { Component } from 'react';
 import Dummy from './Dummy';
 import Filter from '../components/Filter';
 
+import { apiKey } from '../Creds';
+
 export default class Table extends Component {
   // eslint-disable-next-line no-useless-constructor
   constructor(props) {
@@ -14,7 +16,10 @@ export default class Table extends Component {
       dateToggle: false,
       date1: null,
       date2: null,
-      route: null
+      route: null,
+      routes: [],
+      drivers: [],
+      addresses: []
     }
 
     this.handleChange = this.handleChange.bind(this);

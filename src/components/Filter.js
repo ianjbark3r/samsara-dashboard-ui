@@ -94,7 +94,7 @@ const Filter = (props) => {
         <div className={`${inputClasses} ml-auto`}>
           <button
             className={buttonClasses}
-            onClick={props.onFilter}
+            onClick={(e) => props.handleFilter(e)}
             style={buttonStyles}
             type="submit"
           >

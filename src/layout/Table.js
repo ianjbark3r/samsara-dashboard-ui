@@ -23,6 +23,7 @@ export default class Table extends Component {
     }
 
     this.handleChange = this.handleChange.bind(this);
+    this.handleFilter = this.handleFilter.bind(this);
     this.handleToggle = this.handleToggle.bind(this);
   }
 
@@ -30,6 +31,28 @@ export default class Table extends Component {
     this.setState({
       [e.target.id]: e.target.value
     });
+  }
+
+  handleFilter(e) {
+    e.preventDefault();
+
+    const requestOptions = {
+      method: 'GET',
+      headers: {
+        "Authorization": `Bearer ${apiKey}`,
+        "Access-Control-Allow-Origin": 'http://localhost:3000',
+        "Access-Control-Allow-Headers": "Accept, Access-Control-Allow-Origin, Authorization"
+      },
+      redirect: 'follow'
+    }
+    
+    fetch('https://api.samsara.com/v1/fleet/drivers', requestOptions)
+      .then((res) => {
+        console.log(res);
+      })
+      .catch((err) => {
+        console.log(err);
+      })
   }
 
   handleToggle(e) {
@@ -47,6 +70,7 @@ export default class Table extends Component {
           <Filter 
             data={this.state}
             handleChange={this.handleChange}
+            handleFilter={this.handleFilter}
             handleToggle={this.handleToggle} 
           />
           <Dummy data={this.state} />

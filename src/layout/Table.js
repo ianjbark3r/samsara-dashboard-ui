@@ -39,12 +39,10 @@ export default class Table extends Component {
     const requestOptions = {
       method: 'GET',
       headers: {
-        "Authorization": `Bearer ${apiKey}`,
-        "Access-Control-Allow-Origin": 'http://localhost:3000',
-        "Access-Control-Allow-Headers": "Accept, Access-Control-Allow-Origin, Authorization"
+        "Authorization": `Bearer ${apiKey}`
       },
       redirect: 'follow'
-    }
+    };
     
     fetch('https://api.samsara.com/v1/fleet/drivers', requestOptions)
       .then((res) => {
